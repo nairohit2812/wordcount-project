@@ -1,0 +1,13 @@
+<h3>This is count.html file</h3>
+<h4>Number of words in you entered are : {{count}}</h4>
+
+<h1>Full text is </h1>
+{{fulltext}}
+
+
+<h2>Each word count is </h2>
+{% for word, counttotal in sortword %}
+
+    {{ word }} - {{ counttotal }} <br/>
+
+{% endfor %}

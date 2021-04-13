@@ -1,0 +1,10 @@
+<h1>Welcome to Word Count</h1>
+
+<!--{{Value}} when a dictionary is passed in render function //-->
+
+<form action="{% url 'count' %}">
+    <!--Whatever url is given here, same name should be given to path in urls.py file-->
+    <textarea cols="40" rows="25" name="fulltext"></textarea><br/>
+    <input type="submit" value="Count Words" />
+    <a href = {% url 'about' %}>About Us</a>
+</form>
